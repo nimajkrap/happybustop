@@ -1,18 +1,37 @@
+
 // 헤더 js
 $(function () {
-    $(document).ready(function () {
+    window.addEventListener('scroll', function () {
+        const headerFixed = document.querySelector('.header_fixed');
+        const scrollY = window.scrollY;
 
-        var scrollOffset = $('.scroll-menu').offset();
-
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > scrollOffset.top) {
-                $('.scroll-menu').addClass('scroll-fixed');
-            }
-            else {
-                $('.scroll-menu').removeClass('scroll-fixed');
-            }
-        });
+        if (scrollY > 10) {
+            headerFixed.style.display = 'block';
+        } else {
+            headerFixed.style.display = 'none';
+        }
     });
+});
+
+
+
+$(function () {
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.header_fixed').outerHeight();
+
+    $(window).scroll(function (event) {
+        didScroll = true;
+    });
+
+    setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+
+    }, 250);
 });
 
 
@@ -107,30 +126,101 @@ $(function () {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 2,
+        slidesPerView: 3,
         loop: true,
+        slideToClickedSlide: true,
 
         coverflowEffect: {
-            rotate: 30,
-            stretch: 50, // 간격
-            depth: 100,
+            rotate: 10,
+            stretch: 30, // 간격
+            depth: 0,
             modifier: 1,
             slideShadows: false, //그라데이션 제거
         },
 
         pagination: {
-            el: ".swiper-pagination",
+            el: ".story_first .swiper-pagination",
+            clickable: true,
         },
+
+        navigation: {
+            nextEl: ".story_first .swiper-button-next",
+            prevEl: ".story_first .swiper-button-prev",
+        },
+    });
+});
+
+$(function(){
+    AOS.init({
+            duration: 700,
+            offset: 300,
+            easing: 'ease-out-back',
+        });
+});
+
+// 캠페인 슬라이드 js   
+$(function () {
+    var swiper = new Swiper(".campaign", {
+        slidesPerView: 4,
+        spaceBetween: 25,
+        loop: true,
+        centeredSlides: false,
 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+    });
+});
 
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
+
+// 후원아동 슬라이드 js
+$(function () {
+    // 텍스트 슬라이더
+    var textSwiper = new Swiper('.chlidText', {
+        loop: true,
+        allowTouchMove: true,
+    });
+
+    // 이미지 슬라이더
+    var imageSwiper = new Swiper('.chlid', {
+        slidesPerView: 7,
+        spaceBetween: 40,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+            nextEl: '.sponchlid .swiper-button-next', // 버튼 바깥으로 빼기
+            prevEl: '.sponchlid .swiper-button-prev',
         },
+        on: {
+            slideChange: function () {
+                // 이미지 넘길 때 텍스트도 함께 넘김
+                textSwiper.slideToLoop(this.realIndex);
+            }
+        }
+    });
 
+    // 슬라이드 클릭 시 텍스트도 이동
+    $('.chlid .swiper-slide').on('click', function () {
+        var index = $(this).attr('data-swiper-slide-index'); // 원본 인덱스
+        imageSwiper.slideToLoop(index);
+        textSwiper.slideToLoop(index);
+    });
+});
+
+
+// 소식 슬라이드 js
+$(function () {
+    var swiper = new Swiper(".letter", {
+        slidesPerView: 'auto',
+        loop: true,
+        centeredSlides: false,
+        spaceBetween: 20,
+        allowTouchMove: false,
+
+        navigation: {
+        nextEl: "#Letter .swiper-button-next",
+        prevEl: "#Letter .swiper-button-prev",
+      },
     });
 });
