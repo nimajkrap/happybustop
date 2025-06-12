@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <meta name="viewport" content="width=1400">
+
+  <!--파비콘-->
+  <link href="./images/favicon2.png" rel="icon" type="image/png" sizes="32x32">
+
+  <!-- font -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>행복정류장</title>
+
+</head>
+
+<body>
+  <!-- 퀵 메뉴 -->
+  <div class="quick_btn">
+    <div class="donation_btn">
+      <a href="#none">
+        <img src="./images/donationbtn.png" alt="후원하기 버튼" class="dobtn">
+        <img src="./images/donationbtnred.png" alt="후원하기 버튼" class="dobtn_red">
+        <p>후원하기</p>
+      </a>
+    </div>
+
+    <div class="top_btn">
+      <a href="#">
+        <img src="./images/topbtn.png" alt="탑 버튼" class="topbtn">
+        <img src="./images/topbtnred.png" alt="탑 버튼" class="topbtn_red">
+      </a>
+    </div>
+  </div>
+
+
+  <!-- 헤더 -->
+  <header>
+
+    <div class="header_in">
+
+      <!-- 헤더 왼쪽 (로고 + 메뉴) -->
+      <div class="header_left">
+
+        <!-- 로고 -->
+        <a href="#main_visual">
+          <img src="./images/logo4.png" alt="로고" class="logo">
+        </a>
+
+        <!-- 메뉴 -->
+        <ul>
+          <li>
+            <a href="#Story" class="m_name">
+              스토리
+              <img src="./images/StoryIconWhite.png" alt="스토리아이콘">
+              <img src="./images/StoryIconGray.png" alt="스토리 아이콘" class="m_icon">
+            </a>
+          </li>
+          <li>
+            <a href="#Introduce" class="m_name">
+              소개
+              <img src="./images/IntroduceIconWhite.png" alt="소개아이콘">
+              <img src="./images/IntroduceIconGray.png" alt="소개아이콘" class="m_icon">
+            </a>
+          </li>
+          <li>
+            <a href="#Campaign" class="m_name">
+              캠페인
+              <img src="./images/CampaignIconWhite.png" alt="캠페인아이콘">
+              <img src="./images/CampaignIconGray.png" alt="캠페인아이콘" class="m_icon">
+            </a>
+          </li>
+          <li>
+            <a href="#Store" class="m_name">
+              스토어
+              <img src="./images/StoreIconWhite.png" alt="스토어아이콘">
+              <img src="./images/StoreIconGray.png" alt="스토어아이콘" class="m_icon">
+            </a>
+          </li>
+          <li>
+            <a href="#Letter" class="m_name">
+              소식
+              <img src="./images/LetterIconWhite.png" alt="소식아이콘">
+              <img src="./images/LetterIconGray.png" alt="소식아이콘" class="m_icon">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- 헤더 왼쪽 (검색 + 로그인/회원가입) -->
+      <div class="header_right">
+
+        <a href="#none" class="m_name">
+          <img src="./images/SearchIconWhite.png" alt="돋보기아이콘">
+        </a>
+
+        <ul>
+          <li><a href="#none">로그인</a></li>
+          <li>│</li>
+          <li><a href="#none">회원가입</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- 헤더 픽스 -->
+  <div class="header_fixed">
+    <header>
+
+      <div class="header_in">
+
+        <!-- 헤더 왼쪽 (로고 + 메뉴) -->
+        <div class="header_left">
+
+          <!-- 로고 -->
+          <a href="#main_visual">
+            <img src="./images/logo1.png" alt="로고" class="logo">
+          </a>
+
+          <!-- 메뉴 -->
+          <ul>
+            <li>
+              <a href="#Story" class="m_name">
+                스토리
+                <img src="./images/StoryIconGray.png" alt="스토리아이콘">
+                <img src="./images/StoryIconRed.png" alt="스토리아이콘" class="m_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#Introduce" class="m_name">
+                소개
+                <img src="./images/IntroduceIconGray.png" alt="소개아이콘">
+                <img src="./images/IntroduceIconRed.png" alt="소개아이콘" class="m_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#Campaign" class="m_name">
+                캠페인
+                <img src="./images/CampaignIconGray.png" alt="캠페인아이콘">
+                <img src="./images/CampaignIconRed.png" alt="캠페인아이콘" class="m_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#Store" class="m_name">
+                스토어
+                <img src="./images/StoreIconGray.png" alt="스토어아이콘">
+                <img src="./images/StoreIconRed.png" alt="스토어아이콘" class="m_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#Letter" class="m_name">
+                소식
+                <img src="./images/LetterIconGray.png" alt="소식아이콘">
+                <img src="./images/LetterIconRed.png" alt="소식아이콘" class="m_icon">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- 헤더 왼쪽 (검색 + 로그인/회원가입) -->
+        <div class="header_right">
+
+          <a href="#">
+            <img src="./images/SearchIconBlack.png" alt="돋보기아이콘">
+          </a>
+
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li>│</li>
+            <li><a href="#">회원가입</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </header>
+  </div>
+
+
+  <!-- 메인 비주얼 + 후원 배너 -->
+  <div id="main_visual">
+
+    <div class="swiper MainVisual">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide1">
+          <div class="main_visual_text">
+            <h1 class="title">
+              아이답게, <br>
+              아이다운 내일을
+            </h1>
+            <p class="desc">
+              보육원 아이들에게 마음껏 누릴 수 있는 <br>
+              아이다운 일상을 선물해주세요.
+            </p>
+            <a href="#" class="more">
+              자세히보기
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide2">
+          <div class="main_visual_text">
+            <h1 class="title">
+              분유 한 통은 <br>
+              아이의 첫 걸음
+            </h1>
+            <p class="desc">
+              영양 섭취가 가장 필요한 <br>
+              생애 첫 1,000일을 지켜주세요.
+            </p>
+            <a href="#" class="more">
+              자세히보기
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide3">
+          <div class="main_visual_text">
+            <h1 class="title">
+              행복정류장의 <br>
+              8번째 생일
+            </h1>
+            <p class="desc">
+              8주년을 맞이한 행복정류장을 <br>
+              특별한 기부로 축하해주세요.
+            </p>
+            <a href="#" class="more">
+              자세히보기
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next">
+        <img src="./images/SlideButtonNext.png" alt="next버튼">
+      </div>
+      <div class="swiper-button-prev">
+        <img src="./images/SlideButtonPrev.png" alt="prev버튼">
+      </div>
+
+    </div>
+
+    <!-- 후원 배너 -->
+    <div class="visual_spon">
+      <div class="visual_spon_in">
+        <form id="SponForm">
+          <p class="explan">
+            소중한 후원금은 행복이 <br>
+            필요한 곳으로 전달됩니다. <br>
+            따뜻한 행복을 보내주세요.
+          </p>
+
+
+
+          <p class="spon_button">
+            <input type="radio" name="donation" id="regular" checked="checked">
+            <label for="regular"><b></b>정기후원</label>
+            <input type="radio" name="donation" id="onetime">
+            <label for="onetime"><b></b>일시후원</label>
+          </p>
+
+          <div class="spon_container">
+            <div class="text_ul_wrap">
+              <a href="javascript:;">직접입력</a>
+              <div class="select_icon"></div>
+              <ul class="ul_select_style">
+                <li>직접입력</li>
+                <li>20,000</li>
+                <li>30,000</li>
+                <li>50,000</li>
+                <li>100,000</li>
+              </ul>
+            </div>
+            <input type="text" class="amount_input">
+            <p>원</p>
+          </div>
+
+          <p class="submit">
+            <button type="submit">후원하기</button>
+          </p>
+
+        </form>
+      </div>
+      <!-- sub banner -->
+    </div>
+  </div>
+
+
+  <!-- 스토리 -->
+  <div id="Story">
+
+    <div class="story_first">
+
+      <div class="story_first_text_box" data-aos="fade-right">
+        <h1>
+          행복을 전달한<br>
+          <span>나눔 후기</span>
+        </h1>
+
+        <p>
+          작은 행복이 아이들의 마음 한 편에 <br>
+          다녀간 여정의 이야기
+        </p>
+        <div class="swiper-button-next" data-aos="fade-left">
+          <img src="./images/StorySlideNext.png" alt="StorySlideNext">
+          <img src="./images/StorySlideNextHover.png" alt="" class="nexthover">
+        </div>
+        <div class="swiper-button-prev" data-aos="fade-left">
+          <img src="./images/StorySlidePrev.png" alt="StorySlidePrev">
+          <img src="./images/StorySlidePrevHover.png" alt="" class="prevhover">
+        </div>
+        <div class="swiper-pagination" data-aos="fade-right"></div>
+      </div>
+
+      <!-- div.swiper story -->
+      <div class="swiper story" data-aos="fade-left">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="./images/Children1.png" alt="" class="bg">
+
+            <div class="text-warp">
+              <p class="num">01</p>
+
+              <div class="tit-box">
+                <p class="tit">
+                  자라나는 <br>
+                  어린왕자 은우
+                </p>
+                <p class="desc">
+                  성장 호르몬 주사 치료를 <br>
+                  이어갈 수 있게 된 <br>
+                  은우의 이야기
+                </p>
+              </div>
+
+              <p class="category">긴급생계지원</p>
+
+              <div class="btn-box">
+                <a href="#" class="more">
+                  자세히보기
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/Children2.png" alt="" class="bg">
+            <div class="text-warp">
+              <p class="num">02</p>
+              <div class="tit-box">
+                <p class="tit">
+                  축구 유망주를 <br>
+                  꿈꾸는 준수
+                </p>
+                <p class="desc">
+                  주변 환경 탓하지 않고 <br>
+                  포기 하지 않는 준수의 꿈은<br>
+                  계속 크고 있어요.
+                </p>
+              </div>
+              <p class="category">보호아동결연</p>
+              <div class="btn-box">
+                <a href="#" class="more">
+                  자세히보기
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/Children3.png" alt="" class="bg">
+            <div class="text-warp">
+              <p class="num">03</p>
+              <div class="tit-box">
+                <p class="tit">
+                  웃음꽃이 피어난 <br>
+                  지온이네
+                </p>
+                <p class="desc">
+                  많은 사랑과 관심으로 <br>
+                  지온이 가족에게도 <br>
+                  특별한 일상이 생겼어요.
+                </p>
+              </div>
+              <p class="category">긴급생계지원</p>
+              <div class="btn-box">
+                <a href="#" class="more">
+                  자세히보기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/Children4.png" alt="" class="bg">
+
+            <div class="text-warp">
+              <p class="num">04</p>
+              <div class="tit-box">
+                <p class="tit">
+                  훌쩍 커버린 <br>
+                  결연 아동
+                </p>
+                <p class="desc">
+                  올해 성인이 된 <br>
+                  결연아동들과 강원도로 <br>
+                  여행을 갔다왔어요.
+                </p>
+              </div>
+
+              <p class="category">보호아동결연</p>
+
+              <div class="btn-box">
+                <a href="#" class="more">
+                  자세히보기
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/Children5.png" alt="" class="bg">
+
+            <div class="text-warp">
+              <p class="num">05</p>
+              <div class="tit-box">
+                <p class="tit">
+                  따뜻한 겨울을 <br>
+                  맞이한 하은이
+                </p>
+                <p class="desc">
+                  따뜻한 사랑과 관심 덕분에 <br>
+                  올해 4살이 된 하은이는 처음으로<br>
+                  따뜻한 겨울을 보낼 수 있었어요.
+                </p>
+              </div>
+
+              <p class="category">긴급생계지원</p>
+
+              <div class="btn-box">
+                <a href="#" class="more">
+                  자세히보기
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- div.swiper story -->
+
+
+
+    </div>
+
+    <div class="story_second" data-aos="fade-up">
+      <div class="story_second_text_box">
+        <p>
+          작은 여정이 남긴 큰 감동
+        </p>
+        <h2>
+          잠시 멈춘 그 자리에서 피어난 <br>
+          <span>따뜻한 나눔 이야기</span>
+        </h2>
+      </div>
+
+      <div class="story-second-box1">
+
+        <div class="content-box">
+          <div class="text">
+            <h3 class="title">
+              "처음 받아본 생일 케이크, 아직도 잊지 못해요."
+            </h3>
+
+            <h5 class="explan">
+              12살 민수는 태어나 처음으로 생일 케이크를 받았습니다. 케이크 위에 적힌 이름 하나에 <br>
+              울음을 터뜨렸던 그날, 민수는 자신이 소중한 존재임을 처음으로 느꼈다고 말합니다.
+            </h5>
+
+            <div class="tagbox">
+              <h5 class="tag">#생일</h5>
+              <h5 class="tag">#기억</h5>
+              <h5 class="tag">#선물</h5>
+              <h5 class="tag">#희망</h5>
+            </div>
+          </div>
+
+          <img src="./images/story(1).png" alt="스토리2 아이사진1" class="minsu">
+          <img src="./images/sprinkles.png" alt="스프링클" class="sprinkles" data-aos="zoom-in-up">
+        </div>
+      </div>
+
+      <div class="story-second-box2">
+
+        <div class="content-box">
+          <div class="text">
+            <h3 class="title">
+              "예쁘다고 불러준 날, 처음으로 웃었어요."
+            </h3>
+
+            <h5 class="explan">
+              처음 만난 날 말없이 고개만 숙였던 수아. 새로 받은 옷을 입고 "예쁘다"는 말을 들은 순간, <br>
+              부끄러운 듯 웃으며 눈을 마주쳤습니다. 작은 변화가 큰 용기를 만들었습니다.
+            </h5>
+
+            <div class="tagbox">
+              <h5 class="tag">#미소</h5>
+              <h5 class="tag">#용기</h5>
+              <h5 class="tag">#변화</h5>
+              <h5 class="tag">#칭찬</h5>
+            </div>
+          </div>
+          <img src="./images/story(2).png" alt="스토리2 아이사진2" class="sua">
+          <img src="./images/sprinkles.png" alt="스프링클" class="sprinkles" data-aos="zoom-in-up">
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- 소개 -->
+  <div id="Introduce">
+    <div class="int_in" data-aos="fade-up">
+
+      <div class="int_text_box">
+        <h2 class="title">
+          <span>행복이 필요한</span><br>
+          그곳에 닿기 위해
+        </h2>
+
+        <p class="explan">
+          우리를 가장 필요로 하는 곳에서 아이들을 돌보고, <br>
+          더 나은 내일을 위한 활동에 전념합니다.
+        </p>
+
+        <ul class="int_menu">
+          <li><a href="#HappyBusStop">행복정류장은</a></li>
+          <li><a href="#Activity">활동/현황</a></li>
+          <li><a href="#Faith">신뢰/투명성</a></li>
+        </ul>
+      </div>
+
+      <div class="int_right">
+
+        <div id="HappyBusStop" class="int_content" data-aos="fade-up">
+          <p class="num">01.</p>
+
+          <div class="int_content_in">
+            <h3>
+              행복정류장은<br>
+              도움이 필요한 아이들의 곁에 머무는 단체입니다.
+            </h3>
+            <p>
+              우리는 어려운 상황에 처한 아이들에게 실질적인 지원을 아끼지 않고, 아이들이 더 나은 미래를 꿈<br>
+              꿀 수 있도록 함께 걷고 있습니다.
+            </p>
+            <img src="./images/introduce.png" alt="후원 단체 사진">
+
+            <a href="#none" class="more">자세히보기</a>
+          </div>
+
+        </div>
+
+        <div id="Activity" class="int_content" data-aos="fade-up">
+          <p class="num">02.</p>
+
+          <div class="int_content_in">
+            <h3>
+              행복정류장은<br>
+              518번의 프로젝트로 6,350명의 아이들을 만났습니다.
+            </h3>
+
+            <p>
+              후원금의 80% 이상을 반드시 아동을 위해 사용한다는 원칙을 지킵니다.
+            </p>
+
+            <div class="count">
+              <div class="count_box">
+                <h5>국내 협력기관</h5>
+                <div class="counting">
+                  <h2>2,803</h2>
+                  <h5>개</h5>
+                </div>
+              </div>
+
+              <div class="count_box">
+                <h5>사업비</h5>
+                <div class="counting">
+                  <h2>1,260,948,015</h2>
+                  <h5>원</h5>
+                </div>
+              </div>
+
+              <div class="count_box">
+                <h5>후원자</h5>
+                <div class="counting">
+                  <h2>2,504,567</h2>
+                  <h5>명</h5>
+                </div>
+              </div>
+
+              <div class="count_box">
+                <h5>2024년 지원 아동</h5>
+                <div class="counting">
+                  <h2>2,739,080</h2>
+                  <h5>명</h5>
+                </div>
+              </div>
+
+
+            </div>
+
+            <a href="#none" class="more">자세히보기</a>
+          </div>
+
+        </div>
+
+        <div id="Faith" class="int_content" data-aos="fade-up">
+          <p class="num">03.</p>
+
+          <div class="int_content_in">
+            <h3>
+              행복정류장은<br>
+              후원금의 82.8%는 후원아동을 위해 사용됩니다.
+            </h3>
+            <p>
+              후원금의 80% 이상을 반드시 아동을 위해 사용한다는 원칙을 지킵니다.
+            </p>
+
+            <div class="chart">
+              <div class="chart-container">
+                <canvas id="donutChart"></canvas>
+              </div>
+
+              <div class="custom-legend">
+                <div class="item"><span class="dot red"></span> 아동지원</div>
+                <div class="item"><span class="dot yellow"></span> 운영관리</div>
+                <div class="item"><span class="dot gray"></span> 기타</div>
+              </div>
+            </div>
+
+            <a href="#none" class="more">자세히보기</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 캠페인 페이지 -->
+  <div id="Campaign">
+
+    <!-- 진행중 캠페인 콘텐츠 -->
+    <div class="campaign-content" data-aos="fade-up">
+      <h2 class="title">
+        행복을 전하는 <span>캠페인</span>
+      </h2>
+      <p class="explan">여러분의 소중한 참여로 시작된 특별한 여정, 따뜻한 변화로 이어집니다.</p>
+
+      <div class="swiper campaign">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign1.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-68
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  화상 아동의 흉터의 아픔을<br>
+                  치료해주세요
+                </p>
+
+                <h6 class="percent">45%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>2,475,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>5,500,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign2.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-68
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  꽃샘추위보다 더 매서운 건<br>
+                  연탄이 떨어진 방의 냉기입니다
+                </p>
+
+                <h6 class="percent">27%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>810,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>3,000,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign3.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-36
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  보육원 아이들에게 아이다운 <br>
+                  일상을 선물해주세요<br>
+                </p>
+
+                <h6 class="percent">63%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>1,575,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>2,500,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign4.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-36
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  결연가정의 한 끼를 위한 응원의<br>
+                  쌀을 보내주세요
+                </p>
+
+                <h6 class="percent">42%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>1,260,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>3,000,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign5.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-36
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  교통사고로 홀로 남겨진 해준이<br>
+                  를 위해 함께 지켜주세요
+                </p>
+
+                <h6 class="percent">75%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>1,875,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>2,500,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign6.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-14
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  거대한 산불이 120년 전통의<br>
+                  예배당을 삼켰습니다
+                </p>
+
+                <h6 class="percent">91%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>6,370,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>7,000,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#none">
+              <img src="./images/campaign7.png" alt="캠페인 사진">
+              <div class="d_day">
+                D-14
+              </div>
+              <div class="cam_bottom">
+                <p>
+                  주연이가 할머니와 행복한 하루<br>
+                  를 보낼 수 있게 함께해 주세요
+                </p>
+
+                <h6 class="percent">82%</h6>
+                <div class="per">
+                  <div class="per_red"></div>
+                </div>
+                <div class="per_count">
+                  <h6>2,460,000원</h6>
+                  <div class="per_goal">
+                    <h6>목표금액</h6>
+                    <h6>3,000,000원</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="swiper-button-next">
+          <img src="./images/campaignnext.png" alt="캠페인 슬라이드 버튼" class="default">
+        </div>
+
+        <div class="swiper-button-prev">
+          <img src="./images/campaignprev.png" alt="캠페인 슬라이드 버튼">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 결연아동 콘텐츠 -->
+    <div class="sponchlid" data-aos="fade-up">
+      <h2 class="spontitle">
+        나를 기다리는 <span>특별한 인연</span>
+      </h2>
+
+      <p class="sponexplan">아동의 오늘과 내일을 바꾸어 가는 여정에 함께 해주세요.</p>
+
+      <a href="#none" class="more">
+        <p>후원아동 더보기</p>
+      </a>
+
+      <div class="swiper chlid">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/chlid1.png" alt="결연아동">
+            한지호
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid2.png" alt="결연아동">
+            박지안
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid3.png" alt="결연아동">
+            윤유준
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid4.png" alt="결연아동">
+            오윤호
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid5.png" alt="결연아동">
+            이연우
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid6.png" alt="결연아동">
+            최하윤
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid7.png" alt="결연아동">
+            장소이
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid8.png" alt="결연아동">
+            정준우
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid9.png" alt="결연아동">
+            이지환
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlid10.png" alt="결연아동">
+            조하은
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next">
+        <img src="./images/campaignnext.png" alt="결연아동 슬라이드 버튼">
+      </div>
+
+      <div class="swiper-button-prev">
+        <img src="./images/campaignprev.png" alt="결연아동 슬라이드 버튼" >
+      </div>
+
+      <div class="swiper chlidText">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/chlidtext1.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 한지호입니다.
+              </h3>
+              <p class="ex">
+                나이는 6살이고, 강원도에 살고 있어요. <br>
+                저는 블록놀이와 숨바꼭질을 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext2.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 박지안입니다.
+              </h3>
+              <p class="ex">
+                나이는 9살이고, 서울에 살고 있어요. <br>
+                저는 자전거 타기와 퍼즐 맞추기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext3.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 윤유준입니다.
+              </h3>
+              <p class="ex">
+                나이는 8살이고, 부산에 살고 있어요. <br>
+                저는 공놀이와 책읽기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext4.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 오윤호입니다.
+              </h3>
+              <p class="ex">
+                나이는 8살이고, 인천에 살고 있어요. <br>
+                저는 블록놀이와 줄넘기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext5.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 이연우입니다.
+              </h3>
+              <p class="ex">
+                나이는 7살이고, 광주에 살고 있어요. <br>
+                저는 축구와 물놀이를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext6.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 최하윤입니다.
+              </h3>
+              <p class="ex">
+                나이는 5살이고, 창원에 살고 있어요. <br>
+                저는 그림그리기와 종이접기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext7.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 장소이입니다.
+              </h3>
+              <p class="ex">
+                나이는 10살이고, 서울에 살고 있어요. <br>
+                저는 종이접기와 책읽기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext8.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 정준우입니다.
+              </h3>
+              <p class="ex">
+                나이는 5살이고, 제주도에 살고 있어요. <br>
+                저는 공놀이와 동화책 읽는 것을 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext9.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 이지환입니다.
+              </h3>
+              <p class="ex">
+                나이는 12살이고, 부산에 살고 있어요. <br>
+                저는 축구와 줄넘기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/chlidtext10.png" alt="결연아동" class="chlidtextimg">
+            <img src="./images/textsprinkles.png" alt="꾸밈" class="textsprinkles">
+
+            <div class="textbox">
+              <h3 class="tit">
+                안녕하세요. 저는 조하은입니다.
+              </h3>
+              <p class="ex">
+                나이는 11살이고, 대구에 살고 있어요. <br>
+                저는 자전거 타기와 그림 그리기를 좋아합니다. <br>
+                저의 후원자님이 되어주시겠어요?
+              </p>
+            </div>
+
+            <div class="chlidbtn">
+              <a href="#none" class="more">자세히보기</a> <br>
+              <a href="#none" class="donat">정기후원하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 스토어 페이지 -->
+  <div id="Store">
+
+    <!-- 기프트박스 배너 -->
+    <div class="giftbox" data-aos="fade-up">
+
+      <div class="giftbox_in">
+        <img src="./images/giftbox.png" alt="기프트박스">
+
+        <div class="giftbox_right">
+          <div class="gifttext">
+            <h3>행복정류장 기프트박스</h3>
+            <p>
+              따뜻한 후원해주신 분들에게 감사의 마음을 담아<br>
+              전달되는 특별한 선물입니다. 후원에 보답하는 마음을 담았습니다.
+            </p>
+
+            <h6>
+              ※ &nbsp;기프트박스는 재고 상황에 따라 제공 시기가 변동될 수 있습니다.
+              <br>
+              ※ &nbsp;후원자의 정보 확인 후 순차적으로 발송되며, 배송 주소가 정확하지 않을 경우
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 발송에 지연이 발생할 수 있습니다.
+            </h6>
+          </div>
+        </div>
+        <a href="#none" class="get">
+          <p>후원하고 기프트박스 받기</p>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- 굿즈 -->
+    <div class="goods" data-aos="fade-up">
+      <h2 class="title">
+        아동을 구하는 <span>착한 소비</span>
+      </h2>
+      <div class="explan">
+        판매되는 굿즈의 일부 금액은 도움이 필요한 아이들에게 전해집니다.
+
+        <a href="#none" class="more">더보기</a>
+      </div>
+
+      <!-- 상품 -->
+      <div class="product">
+
+        <div class="product_left">
+          <div class="goods_product">
+            <a href="#none" class="img"><img src="./images/GlassMug.png" alt="유리컵 굿즈" class="b_product"></a>
+          </div>
+          <img src="./images/heartbig.png" alt="" class="heartbig">
+          <img src="./images/heartbigred.png" alt="" class="heartbigred">
+        </div>
+
+        <div class="product_right">
+
+          <div class="left_text">
+            <a href="#none">
+              <p>BEST</p>
+              <h3>베이직 유리 머그컵</h3>
+              <h4>15,500원</h4>
+            </a>
+          </div>
+
+          <div class="product_right_bottom">
+
+            <div class="s_product">
+              <a href="#none">
+                <div class="goods_product">
+                  <img src="./images/ecobag.png" alt="에코백" class="product_img">
+                </div>
+                <p>베이직 린넨 에코백</p>
+              </a>
+              <img src="./images/heartdefault.png" alt="" class="heartdefault">
+              <img src="./images/heartred.png" alt="" class="heartred">
+              <h5>19,900원</h5>
+            </div>
+
+            <div class="s_product">
+              <a href="#none">
+                <div class="goods_product">
+                  <img src="./images/tumbler.png" alt="텀블러" class="product_img">
+                </div>
+                <p>행복정류장 텀블러</p>
+              </a>
+              <img src="./images/heartdefault.png" alt="" class="heartdefault">
+              <img src="./images/heartred.png" alt="" class="heartred">
+              <h5>25,900원</h5>
+            </div>
+
+            <div class="s_product">
+              <a href="#none">
+                <div class="goods_product">
+                  <img src="./images/badge.png" alt="배지" class="product_img">
+                </div>
+                <p>행복정류장 뱃지 4종</p>
+              </a>
+              <img src="./images/heartdefault.png" alt="" class="heartdefault">
+              <img src="./images/heartred.png" alt="" class="heartred">
+              <h5>4,900원</h5>
+            </div>
+
+            <div class="s_product">
+              <a href="#none">
+                <div class="goods_product">
+                  <img src="./images/t-shirt.png" alt="티셔츠" class="product_img">
+                </div>
+                <p>행복정류장 티셔츠</p>
+              </a>
+              <img src="./images/heartdefault.png" alt="" class="heartdefault">
+              <img src="./images/heartred.png" alt="" class="heartred">
+              <h5>21,900원</h5>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="Letter" data-aos="fade-up">
+
+    <div class="textbox">
+      <h1 class="title">
+        행복하고 생생한 <span>후기</span>
+      </h1>
+      <p class="explan">
+        후원자들의 경험과 감동이 담긴 소중한 이야기
+      </p>
+    </div>
+
+    <div class="swiper letter">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              아이들에게 작은 도움이라도 줄 수 있어 정말 기쁩니다.
+            </h4>
+            <p class="name">
+              정성민
+            </p>
+            <h5 class="date">
+              2021.10.24
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              아이에게 교육과 안전한 환경을 제공해주는 이 단체에 후원할 수 있어 매우 자랑스럽습니다.
+            </h4>
+            <p class="name">
+              조형준
+            </p>
+            <h5 class="date">
+              2023.03.12
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              그들의 변화와 성장을 함께 할 수 있어 감사한 마음입 니다.
+            </h4>
+            <p class="name">
+              오세영
+            </p>
+            <h5 class="date">
+              2023.08.21
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              앞으로도 지속적인 후원 도 줄 수 있어 정말 기쁩니 다.
+            </h4>
+            <p class="name">
+              최유리
+            </p>
+            <h5 class="date">
+              2024.11.12
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              앞으로도 꾸준히 응원하겠습니다. 힘내세요!
+            </h4>
+            <p class="name">
+              한지훈
+            </p>
+            <h5 class="date">
+              2024.12.30
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              좋은 취지의 활동에 함께할 수 있어 오히려 제가 더 감사한 마음입니다.
+            </h4>
+            <p class="name">
+              윤지은
+            </p>
+            <h5 class="date">
+              2025.02.02
+            </h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text-warp">
+            <img src="./images/lettericon.png" alt="큰따옴표" class="lettericon">
+            <h4 class="tit">
+              조금이나마 힘이 되기를 바라며, 앞으로도 계속 응원하고 싶습니다.
+            </h4>
+            <p class="name">
+              장보미
+            </p>
+            <h5 class="date">
+              2025.07.10
+            </h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="redbar"></div>
+
+    <div class="swiper-button-next">
+      <img src="./images/letternextbtn.png" alt="">
+    </div>
+    <div class="swiper-button-prev">
+      <img src="./images/letterprevbtn.png" alt="">
+    </div>
+
+  </div>
+
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_top">
+      <div class="footer_left">
+        <p>우리 아이들의 변화와 진행 상황을 지금, 받아보세요.</p>
+        <a href="#none">뉴스레터 신청하기</a>
+      </div>
+
+      <div class="sns">
+        <a href="#none">
+          <img src="./images/band.png" alt="밴드 아이콘">
+        </a>
+        <a href="#none">
+          <img src="./images/blog.png" alt="블로그 아이콘">
+        </a>
+        <a href="#none">
+          <img src="./images/youtube.png" alt="유튜브 아이콘">
+        </a>
+        <a href="#none">
+          <img src="./images/insta.png" alt="인스타 아이콘">
+        </a>
+        <a href="#none">
+          <img src="./images/kakao.png" alt="카카오 아이콘">
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer_bottom">
+      <ul class="detail-link">
+        <li>
+          <a href="#none">자주하는 질문</a>
+        </li>
+        <li>│</li>
+        <li>
+          <a href="#none">사이트맵</a>
+        </li>
+        <li>│</li>
+        <li>
+          <a href="#none">이용약관</a>
+        </li>
+        <li>│</li>
+        <li>
+          <a href="#none">개인정보처리방침</a>
+        </li>
+      </ul>
+
+      <h5 class="detail_info">
+        (우 48574) 부산광역시 남구 용호로 216번가길 10(용호동)사업자등록번호 201-08-24856 박자민 <br>
+        Copyright ©Happy Stop. All right reserved
+      </h5>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- chart js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- 내 js -->
+  <script src="./script/index.js"></script>
+
+</body>
+
+</html>
